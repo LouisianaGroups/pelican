@@ -5,7 +5,7 @@ defmodule PelicanWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", PelicanWeb do
+  scope "/api", PelicanWeb do
     pipe_through :api
 
     get "/cache", GSXController, :read_cache
