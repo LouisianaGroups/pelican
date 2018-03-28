@@ -3,9 +3,9 @@ defmodule Pelican.GSX.HTTPClient do
   Provides functions for interfacing with the gsx2json web API.
   """
 
-  @behaviour Spotify.Client
+  @behaviour Pelican.GSX.Client
 
-  @endpoint "http://gsx2json.freighter.cloud/api"
+  @endpoint "https://gsx2json.freighter.cloud/api"
 
   @doc """
   `GET`s the most recent data available for the Google Sheet
