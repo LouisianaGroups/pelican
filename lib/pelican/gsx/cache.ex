@@ -8,7 +8,7 @@ defmodule Pelican.GSX.Cache do
 
   @name PelicanWorker
   @client Application.get_env(:pelican, Pelican.GSX)[:client]
-  @refresh_interval 300_000
+  @refresh_interval 1_800_000
 
   ## Client API
 
