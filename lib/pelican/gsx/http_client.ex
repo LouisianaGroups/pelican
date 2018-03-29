@@ -5,7 +5,7 @@ defmodule Pelican.GSX.HTTPClient do
 
   @behaviour Pelican.GSX.Client
 
-  @endpoint "https://gsx2json.freighter.cloud/api"
+  @endpoint "http://gsx2json.com/api"
 
   @doc """
   `GET`s the most recent data available for the Google Sheet
@@ -21,7 +21,7 @@ defmodule Pelican.GSX.HTTPClient do
       {:error, "Endpoint was unresponsive"}
   """
   def fetch(document_id) do
-    case HTTPoison.get(@endpoint, [], params: [id: document_id]) do
+    case HTTPoison.get(@endpoint, [], params: [id: document_id, columns: false, sheet: 1]) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         {:ok, body}
       {:ok, %HTTPoison.Response{status_code: code, body: body}} ->
