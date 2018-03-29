@@ -6,7 +6,7 @@ defmodule Pelican.Application do
 
     children = [
       supervisor(PelicanWeb.Endpoint, []),
-      worker(Pelican.GSX.Cache, ["1AG-KnDE-CLyB4dc-p3uRvtV0VCH8rPmYgq641XLgy2E"]),
+      worker(Pelican.GSX.Cache, ["12zkNdCEEyFeUlIj7Lw_v5-krx3YRws1olJ12N0e8XSU"]),
     ]
 
     opts = [strategy: :one_for_one, name: Pelican.Supervisor]
