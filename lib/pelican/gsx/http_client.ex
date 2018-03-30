@@ -110,9 +110,10 @@ defmodule Pelican.GSX.HTTPClient do
   end
 
   defp extract_date_time(field) do
-    case Timex.parse(field, "{M}/{D}/{YY} {h24}:{m}") do
+    case Timex.parse(field, "{M}/{D}/{YYYY} {h24}:{m}:{s}") do
       {:ok, parsed} ->
         Timex.to_datetime(parsed, "America/Chicago")
+        |> Timex.format!("{ISO:Extended:Z}")
 
       {:error, error} ->
         nil
