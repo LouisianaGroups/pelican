@@ -30,8 +30,7 @@ defmodule PelicanWeb.Endpoint do
     signing_salt: "3n4c3jo1"
 
   plug Corsica,
-    origins: [~r{^http://localhost}, ~r{^https://louisianagroups\.com},
-              ~r{^https://deploy-preview-.*.netlify\.com}],
+    origins: "*",
     allow_headers: ["content-type"]
 
   plug PelicanWeb.Router
