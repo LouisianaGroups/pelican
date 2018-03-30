@@ -2,7 +2,7 @@ defmodule Pelican.Types.Group do
   @moduledoc """
   Defines a group.
 
-  * `id` - An integer identifying the group
+  * `id` - An string identifying the group
   * `name` - A string describing the group’s name
   * `hex` - A string that defines the color associated with the group
   * `icon` - The name of the Font Awesome icon(s) used to represent the group
@@ -18,7 +18,7 @@ defmodule Pelican.Types.Group do
   alias Pelican.Types.Event
 
   @type t :: %Pelican.Types.Group{
-    id: integer(),
+    id: String.t(),
     name: String.t(),
     hex: String.t(),
     icon: String.t(),
