@@ -5,7 +5,7 @@ defmodule Pelican.GSX.HTTPClient do
 
   @behaviour Pelican.GSX.Client
 
-  @endpoint "http://gsx2json.com/api"
+  @endpoint "https://gsx2json.freighter.cloud/api"
 
   alias Pelican.Types.{Group, Event}
 
