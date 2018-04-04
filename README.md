@@ -6,8 +6,8 @@ Scoops up and exposes GSX data for the Louisiana Groups organization.
 
 * [Pelican](#pelican)
 * [Table of Contents](#table-of-contents)
-* [Roadmap](#roadmap)
 * [Development](#development)
+* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 
