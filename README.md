@@ -34,6 +34,8 @@ Happy hacking!
 - [ ] 85% or higher test coverage
 - [ ] Continuous integration for testing and linting
 - [ ] Contributing guidelines
+- [ ] Issue template
+- [ ] Pull request template
 
 ## Contributing
 
