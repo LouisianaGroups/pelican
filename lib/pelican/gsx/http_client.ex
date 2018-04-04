@@ -79,6 +79,7 @@ defmodule Pelican.GSX.HTTPClient do
       %Group{
         id: row["id"],
         name: avoid_zero(row["groupname"]),
+        location: avoid_zero(row["location"]),
         hex: avoid_zero(row["hex"]),
         icon: avoid_zero(row["icon"]),
         font_icon: avoid_zero(row["fonticon"]),

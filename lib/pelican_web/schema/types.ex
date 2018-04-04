@@ -4,6 +4,7 @@ defmodule PelicanWeb.Schema.Types do
   object :group do
     field(:id, :id)
     field(:name, :string)
+    field(:location, :string)
     field(:hex, :string)
     field(:icon, :string)
     field(:font_icon, :string)
