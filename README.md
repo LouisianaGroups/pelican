@@ -5,11 +5,11 @@ Scoops up and exposes GSX data for the Louisiana Groups organization.
 ## Table of contents
 
 * [Pelican](#pelican)
-* [Table of Contents](#table-of-contents)
-* [Development](#development)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
+  * [Table of Contents](#table-of-contents)
+  * [Development](#development)
+  * [Roadmap](#roadmap)
+  * [Contributing](#contributing)
+  * [License](#license)
 
 ## Development
 
