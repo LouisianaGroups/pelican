@@ -4,6 +4,7 @@ defmodule Pelican.Types.Group do
 
   * `id` - An string identifying the group
   * `name` - A string describing the group’s name
+  * `location` - A string describing the group's location
   * `hex` - A string that defines the color associated with the group
   * `icon` - The name of the Font Awesome icon(s) used to represent the group
   * `font_icon` - An HTML string used to render the group’s icon
@@ -20,6 +21,7 @@ defmodule Pelican.Types.Group do
   @type t :: %Pelican.Types.Group{
     id: String.t(),
     name: String.t(),
+    location: String.t(),
     hex: String.t(),
     icon: String.t(),
     font_icon: String.t(),
@@ -30,6 +32,6 @@ defmodule Pelican.Types.Group do
     is_active: String.t(),
     events: list(Event.t())
   }
-  defstruct [:id, :name, :hex, :icon, :font_icon, :website,
+  defstruct [:id, :name, :location, :hex, :icon, :font_icon, :website,
              :facebook, :twitter, :meetup, :is_active, :events]
 end
