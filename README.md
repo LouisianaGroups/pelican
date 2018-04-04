@@ -33,10 +33,11 @@ Happy hacking!
 
 - [ ] 85% or higher test coverage
 - [ ] Continuous integration for testing and linting
+- [ ] Contributing guidelines
 
 ## Contributing
 
-...
+Contributions are welcome and appreciated; just be sure to follow the [code of conduct](https://github.com/ngscheurich/pelican/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
